@@ -1,0 +1,76 @@
+/*CSS STYLE*/
+
+* {
+	box-sizing: border-box;
+    font-family: "Pocket Monk", sans-serif;
+    letter-spacing: 0.2em;
+}
+
+h4, input {
+	display: inline;
+}
+
+header * img, footer * img {
+	height: 40px;
+	width: 40px;
+	float: right;
+}
+
+section {
+    margin: 10px 50px 0 50px;
+}
+
+.navbar-header > img {
+    float: left;
+    padding-right: 10px;
+    width: 50px;
+}
+
+header > .navbar {
+	margin-bottom: 0px;
+	padding: 10px 0 5px 0; 
+}
+
+
+footer {
+	padding-top: 10px;
+	border: 1px solid #e3e5e8;
+
+}
+
+button {
+	margin-top: 2px;
+	background: #3897f0;
+    border-color: #3897f0;
+    color: #fff;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    
+    outline: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 60%;
+    -webkit-appearance: none;
+    margin-bottom: 10px;
+    padding: 5px 0;
+}
+
+
+.xyz:hover {
+     box-shadow: 10px 10px 5px #888888;
+     
+}
+
+@media only screen and (max-width: 820px) {
+    /* For mobile phones: */
+        /*[class*="col-"] {
+            width: 100%;
+         } */
+     #add, .userpane{
+        display: none;
+
+    }
+}
+

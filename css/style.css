@@ -1,0 +1,164 @@
+/*!
+Styles for full screen background video demo
+*/
+/* =============================================================================
+  RESETS
+============================================================================= */
+html,
+body,
+div,
+h1,
+p,
+a,
+video {
+  margin: 0;
+  padding: 0;
+}
+
+h4, input {
+  display: inline;
+}
+
+img {
+  height: 40px;
+  width: 50px;
+  float: left;
+  padding-right: 10px;
+  margin-left: 20px;
+}
+
+header > .navbar {
+  margin-bottom: 0px;
+  padding: 10px 0 5px 0;
+  background: rgba(0,0,0, 0.2);
+  border: none; 
+}
+
+
+footer {
+  padding-top: 10px;
+  margin: 0px 80px;
+}
+
+/* =============================================================================
+  HTML, BODY
+============================================================================= */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Pocket Monk", sans-serif;
+  line-height: 1.5;
+}
+nav {
+  z-index: 2;
+  position: relative;
+}
+
+.nav > li > a {
+  font-family: "Pocket Monk";
+  font-size: 1.5em;
+  letter-spacing: 2px;
+}
+
+
+/* =============================================================================
+  CONTENT
+============================================================================= */
+.content {
+  position: relative;
+  top: 35%;
+  z-index: 2;
+  margin: 0 auto;
+  max-width: 720px;
+  text-align: center;
+}
+
+.content__heading {
+  margin-bottom: 24px;
+  color: #272727;
+  font-size: 44px;
+
+}
+
+.content > img {
+  position: absolute;
+  left: 50%;
+  top: 0%;
+  transform: translate(-50%, -110%);
+}
+
+.content__teaser {
+  margin-bottom: 24px;
+  color: white;
+  font-size: 22px;
+  font-family: "Pocket Monk";
+  letter-spacing: 2px;
+}
+
+.content__cta {
+  display: inline-block;
+  margin: 0;
+  padding: 15px 50px;
+  font-size: 22px;
+  text-decoration: none;
+  border: solid 4px rgb(60,88,165);
+  background: rgba(255,204,3, 0.7);
+  box-shadow: 3px 3px 3px #555555;
+}
+.content__cta > a {
+   font-weight: bold;
+   font-family: "Pocket Monk";
+  letter-spacing: 1.8px;
+}
+.content__cta > a:hover {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+/* =============================================================================
+  VIDEO
+============================================================================= */
+.video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+input[type=text] {
+    width: 190px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 5px 10px 6px 10px;
+    margin-top: 3px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    position: absolute;
+}
+
+input[type=text]:focus {
+    width: 40%;
+}
+
+.navbar-header {
+
+}
